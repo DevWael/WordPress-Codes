@@ -24,7 +24,7 @@ add_action( 'edit_user_profile', 'inlife_show_extra_profile_fields' );
 					       class="regular-text"/><br/>
 				</td>
 			</tr>
-			<tr>
+			<tr> 
 				<th><label for="google"><?php esc_html_e( 'Google + URL', 'inlife' ); ?></label></th>
 				<td>
 					<input type="text" name="google" id="google"
