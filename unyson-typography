@@ -15,7 +15,7 @@ function prefix_print_typography( $selector, $option, $before = '', $after = '' 
 	if ( function_exists( 'fw_get_db_settings_option' ) ) {
 		if ( fw_get_db_settings_option( $option ) ) {
 			$font_styles  = array( 'normal', 'italic', 'oblique' );
-			$font_weights = array( 'normal', 'bold', 'bolder', 'lighter', 'regular' );
+			$font_weights = array( 'bold', 'bolder', 'lighter', 'regular' );
 			echo $before;
 			if ( fw_get_db_settings_option( $option . '/family' ) ) {
 				echo $selector . ' {';
