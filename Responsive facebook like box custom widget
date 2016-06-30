@@ -1,4 +1,7 @@
 <?php
+/*
+just add this code to your functions.php file and you will have a full responsive facebook custom widget in your widgets list
+*/
 add_action( 'widgets_init', 'window_widget' );
 function window_widget() {
 	register_widget( 'window_facebook_box' );
