@@ -83,7 +83,7 @@ function prefix_scrape_instagram( $username ) {
 }
 
 /**
- * Display instagram content returned by wink_scrape_instagram()
+ * Display instagram content returned by prefix_scrape_instagram()
  *
  * @param $username
  * @param int $photos_count
