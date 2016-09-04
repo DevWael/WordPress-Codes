@@ -4,7 +4,7 @@
  *
  * @return mixed|WP_Error
  */
-function wink_scrape_instagram( $username ) {
+function prefix_scrape_instagram( $username ) {
 	$username = strtolower( $username );
 	$username = str_replace( '@', '', $username );
 	if ( false === ( $instagram = get_transient( 'wink-instagram-' . sanitize_title_with_dashes( $username ) ) ) ) {
@@ -89,10 +89,10 @@ function wink_scrape_instagram( $username ) {
  *
  * @return array|mixed|WP_Error
  */
-if ( ! function_exists( 'wink_instagram_photos_views' ) ) {
-	function wink_instagram_photos_views( $username, $photos_count = 6, $before = '', $after = '' ) {
+if ( ! function_exists( 'prefix_instagram_photos_views' ) ) {
+	function prefix_instagram_photos_views( $username, $photos_count = 6, $before = '', $after = '' ) {
 		if ( $username ) {
-			$instagram_media = wink_scrape_instagram( $username );
+			$instagram_media = prefix_scrape_instagram( $username );
 			if ( is_wp_error( $instagram_media ) ) {
 				echo '<div class="insta-error">' . wp_kses_post( $instagram_media->get_error_message() ) . '</div>';
 			} else {
