@@ -1,4 +1,5 @@
 <?php
+// Use prefix_instagram_photos_views( 'USER NAME' ) to print the instagram photos.
 /**
  * @param $username --> instagram username
  *
